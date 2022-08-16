@@ -1,0 +1,12 @@
+.iconHeart {
+  margin: 20px;
+}
+
+#onIcon:hover .iconHeart {
+  color: red;
+}
+
+.heartNb {
+  display: flex;
+  align-items: center;
+}
