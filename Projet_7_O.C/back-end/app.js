@@ -41,9 +41,3 @@ app.use('/api/auth', userRoutes);
 app.use('/api/post', postRoutes);
 
 module.exports = app;
-
-// middleware password
-// express rate limit
-// middleware d'auth
-// SI CA MARCHE PAS C'EST SUREMENT PARCEQUE TES REQUETES COTE FRONT ARRIVE PAS LA OU LE BACK LES ATTENDS
-// REGARDER A FAIRE PASSER CERTAINES INFO EN PARAMS (FAIT SUR LES CTRL MAIS PAS SUR LES ROUTES)
