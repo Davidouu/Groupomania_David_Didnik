@@ -70,7 +70,7 @@ function SignUp() {
 
     try {
       const response = await fetch(
-        'http://localhost:3000/api/auth/signup',
+        'http://localhost:3001/api/auth/signup',
         request
       );
       const responseUser = await response.json();
@@ -88,7 +88,7 @@ function SignUp() {
           },
         };
         const secondResponse = await fetch(
-          'http://localhost:3000/api/auth/login',
+          'http://localhost:3001/api/auth/login',
           secondRequest
         );
         const secondResponseUser = await secondResponse.json();
