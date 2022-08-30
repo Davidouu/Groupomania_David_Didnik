@@ -159,7 +159,7 @@ function ModifyPost() {
 
     try {
       const response = await fetch(
-        'http://localhost:3000/api/post/modifPost',
+        'http://localhost:3001/api/post/modifPost',
         request
       );
       const status = response.status;
