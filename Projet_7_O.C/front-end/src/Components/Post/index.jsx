@@ -84,7 +84,7 @@ function Post() {
   useEffect(() => {
     async function FetchInfosPost() {
       try {
-        const response = await fetch('http://localhost:3000/api/post', {
+        const response = await fetch('http://localhost:3001/api/post', {
           headers: {
             Authorization: 'Basic ' + token,
           },
