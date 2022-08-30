@@ -60,7 +60,7 @@ function SignIn() {
 
     try {
       const response = await fetch(
-        'http://localhost:3000/api/auth/login',
+        'http://localhost:3001/api/auth/login',
         request
       );
       const responseUser = await response.json();
