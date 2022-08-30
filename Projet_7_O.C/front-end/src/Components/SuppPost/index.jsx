@@ -47,7 +47,7 @@ function SuppPost() {
 
     try {
       const response = await fetch(
-        'http://localhost:3000/api/post/deletePost',
+        'http://localhost:3001/api/post/deletePost',
         request
       );
       const status = response.status;
