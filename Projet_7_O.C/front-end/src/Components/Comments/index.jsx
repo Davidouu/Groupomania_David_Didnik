@@ -99,7 +99,7 @@ function Comment() {
       setIsCommentLoading(false);
       try {
         const response = await fetch(
-          `http://localhost:3000/api/post//all/comments`,
+          `http://localhost:3001/api/post//all/comments`,
           {
             headers: {
               Authorization: 'Basic ' + token,
