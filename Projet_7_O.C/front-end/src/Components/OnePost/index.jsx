@@ -157,7 +157,7 @@ function Post() {
     };
     try {
       const responseLike = await fetch(
-        'http://localhost:3000/api/post/like',
+        'http://localhost:3001/api/post/like',
         requestLike
       );
       const responseLikeJson = await responseLike.json();
@@ -172,7 +172,7 @@ function Post() {
       setDataLoading(false);
       const token = localStorage.getItem('userToken');
       try {
-        const response = await fetch(`http://localhost:3000/api/post/${id}`, {
+        const response = await fetch(`http://localhost:3001/api/post/${id}`, {
           headers: {
             Authorization: 'Basic ' + token,
           },
