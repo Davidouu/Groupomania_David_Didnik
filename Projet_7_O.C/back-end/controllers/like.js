@@ -33,18 +33,6 @@ exports.likePost = (req, res, next) => {
               res.status(201).json({ message: 'Suppression du like !' })
             )
             .catch((error) => res.status(400).json({ error }));
-        } else if (post.usersDisliked.includes(userId)) {
-          Post.updateOne(
-            { _id: postId },
-            {
-              $inc: { dislikes: -1 },
-              $pull: { usersDisliked: userId },
-            }
-          )
-            .then(() =>
-              res.status(201).json({ message: 'Suppression du dislike ! ' })
-            )
-            .catch((error) => res.status(400).json({ error }));
         } else {
           res.status(403).json({ message: 'requête impossible !' });
         }
