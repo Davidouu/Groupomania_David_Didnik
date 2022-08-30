@@ -203,7 +203,7 @@ function Post() {
               </StyledNameAndDate>
               <StyledNameAndDate>{data.postDate}</StyledNameAndDate>
             </StyledHeaderPostInfos>
-            {userId === data.postUserId && isAdmin === true ? (
+            {userId === data.postUserId || isAdmin === true ? (
               <StyledHeaderPostInfosRight>
                 <StyledNavCo
                   onClick={() => setIsNav(false)}
@@ -254,7 +254,7 @@ function Post() {
               </StyledNameAndDate>
               <StyledNameAndDate>{data.postDate}</StyledNameAndDate>
             </StyledHeaderPostInfos>
-            {userId === data.postUserId && isAdmin === true ? (
+            {userId === data.postUserId || isAdmin === true ? (
               <StyledHeaderPostInfosRight>
                 <StyledNavCo
                   onClick={() => setIsNav(true)}
