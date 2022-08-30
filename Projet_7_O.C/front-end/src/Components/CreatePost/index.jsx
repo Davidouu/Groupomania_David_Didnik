@@ -144,7 +144,7 @@ function CreatePost() {
 
     try {
       const response = await fetch(
-        'http://localhost:3000/api/post/create',
+        'http://localhost:3001/api/post/create',
         request
       );
       const status = response.status;
